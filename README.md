@@ -1,12 +1,13 @@
-- [grad-project-backend](#grad-project-backend)
+- [Project Technologies](#project-technologies)
   - [Tech Stack ( PERN )](#tech-stack--pern-)
   - [Tools](#tools)
   - [Testing](#testing)
-  - [Mobile App Tech Stack](#mobile-app-tech-stack)
+  - [Mobile App](#mobile-app)
+- [Architecture](#architecture)
   - [Project Structure](#project-structure)
 
-# grad-project-backend
 
+# Project Technologies 
 ## Tech Stack ( PERN )
 <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/></a>
 <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/></a>
@@ -21,9 +22,11 @@
 ## Testing
 <a href="https://jestjs.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" width="40" height="40"/> </a>
 
-## Mobile App Tech Stack
+## Mobile App
 <a href="https://www.flutter.dev" target="_blank" rel="noreferrer"> <img src="https://seeklogo.com/images/F/flutter-logo-5086DD11C5-seeklogo.com.png" alt="flutter" width="40" height="40"/> </a>
 <a href="https://dart.dev/" target="_blank" rel="noreferrer"> <img src="https://seeklogo.com/images/D/dart-logo-FDA1939EC4-seeklogo.com.png" alt="Dart" width="40" height="40"/> </a>
+
+# Architecture 
 
 ## Project Structure
 The folder structure of this app is explained below:
@@ -39,4 +42,4 @@ The folder structure of this app is explained below:
 | **server/src/routes**           | Contain all express routes, separated by module/area of application                       
 | **server/src/models**           | Models define schemas that will be used in storing and retrieving data from Application database  |
 | **server/src**/server.js         | Entry point to express app                                                               |
-| package.json             | Contains npm dependencies as well as [build scripts](#what-if-a-library-isnt-on-definitelytyped)   | tsconfig.json            | Config settings for compiling source code only written in TypeScript                                             |
+| package.json             | Contains npm dependencies as well as [build scripts](#what-if-a-library-isnt-on-definitelytyped)
