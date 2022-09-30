@@ -1,11 +1,11 @@
 ## Team Structure
 
-| Name | Role |
-| -------------------- | --------------------------------------------------------------------------------------------- |
-| **Yousef Naeem** | Project Manager • Back-End Dev                                                            
-| **Omar Khaled** | Back-End Dev • Front-End Dev     
-| **Assmaa Akram** | Mobile Team Lead 
-| **Ahmed Khalifa** | Mobile Dev • Software Tester
-| **Mohamed Samir** | Mobile Dev • Software Tester
-| **Mohamed Magdy** | Mobile Dev
-| **Sara Gamal** | Mobile Dev                                                   
+| Name | Role | App |
+| ------------------- | ----------------------------------------------- | ---------- 
+| **Yousef Naeem** | Project Manager • Back-End Dev   | Server-Side                                                     
+| **Omar Khaled** | Back-End Dev • Front-End Dev | Server-Side    
+| **Assmaa Akram** | Mobile Team Lead | Goodreads
+| **Ahmed Khalifa** | Mobile Dev • Software Tester | Amazon
+| **Mohamed Magdy** | Mobile Dev | Amazon
+| **Mohamed Samir** | Mobile Dev • Software Tester | Community
+| **Sara Gamal** | Mobile Dev | Community                                                  
