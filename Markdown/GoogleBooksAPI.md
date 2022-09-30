@@ -1,18 +1,24 @@
-## Google Books API Quick Links
+- [Google Books API](#google-books-api)
+  - [Quick Links](#quick-links)
+  - [API Endpoint](#api-endpoint)
+  - [Ex. for a returned JSON Object](#ex-for-a-returned-json-object)
+  - [All the Important Attributes](#all-the-important-attributes)
+- [Live Project that will help a lot](#live-project-that-will-help-a-lot)
+
+
+## Google Books API
+
+### Quick Links
 
 - [API Overview](https://developers.google.com/books/docs/overview)
 - [Getting Started](https://developers.google.com/books/docs/v1/getting_started)<br>
 - [Using the API](https://developers.google.com/books/docs/v1/using)<br>
 
-## API Endpoint
+### API Endpoint
 `https://www.googleapis.com/books/v1/volumes?q=${Book}` <br>  *The (book) argument is the passed variable from the User* <br>
 *الكتاب اللي اليورز بيبحث عنه*
 
-## Live Project that will help a lot 
-- [Project Link](https://liyasthomas.github.io/books/)
-- [Project Repo](https://github.com/liyasthomas/books) 
-
-## Ex. for a returned JSON Object ( All Book Attributes)
+### Ex. for a returned JSON Object
 ```JSON
 {
     "title": "١٢ قاعدة للحياة",
@@ -47,7 +53,7 @@
 
 ```
 
-## All the Important Attributes
+### All the Important Attributes
 - title
 - authors
 - description
@@ -61,3 +67,7 @@
 - saleInfo
   - saleInfo.listPrice
   - saleInfo.buyLink
+
+## Live Project that will help a lot 
+- [Project Link](https://liyasthomas.github.io/books/)
+- [Project Repo](https://github.com/liyasthomas/books) 
