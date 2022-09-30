@@ -47,7 +47,7 @@
 
 ```
 
-## We Only Care about these Attributes
+## All the Important Attributes
 - title
 - authors
 - description
@@ -58,3 +58,6 @@
 - language
 - previewLink
 - infoLink
+- saleInfo
+  - saleInfo.listPrice
+  - saleInfo.buyLink
