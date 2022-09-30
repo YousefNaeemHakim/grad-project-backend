@@ -2,9 +2,8 @@
   - [Quick Links](#quick-links)
   - [API Endpoint](#api-endpoint)
   - [Ex. for a returned JSON Object](#ex-for-a-returned-json-object)
-  - [All the Important Attributes](#all-the-important-attributes)
+- [All the Important Attributes](#all-the-important-attributes)
 - [Live Project that will help a lot](#live-project-that-will-help-a-lot)
-
 
 ## Google Books API
 
@@ -53,7 +52,7 @@
 
 ```
 
-### All the Important Attributes
+## All the Important Attributes
 - title
 - authors
 - description
