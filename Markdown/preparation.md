@@ -1,9 +1,3 @@
-## Web Framework ( Node.js ) :
-
-- **[Node.js E-Commerce App REST API with MongoDB | Shopping API with Stripe & JWT](https://www.youtube.com/watch?v=rMiRZ1iRC0A&list=WL&index=39)**
-- **[Node.js Blog App REST API with MongoDB](https://youtu.be/OML9f6LXUUs)**
-- **[Node.js Social Media REST API with MongoDB](https://youtu.be/ldGl6L4Vktk)**
-
 ## Database :
 
 - [**NoSQL vs SQL - Which Type of Database Should You Use ?**](https://www.youtube.com/watch?v=FzlpwoeSrE0&list=PL_zyNhyiuTodwAnK9DYPUNeXL-jimpbCo&index=35)
