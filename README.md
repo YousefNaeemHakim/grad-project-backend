@@ -6,6 +6,7 @@
   - [Mobile App](#mobile-app)
 - [Architecture](#architecture)
   - [Project Structure](#project-structure)
+  - [Routes Structure](#routes-structure)
 
 
 # Project Technologies 
@@ -28,7 +29,11 @@
 <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a>
 <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a>
 
+---
+
 # Architecture 
+
+---
 
 ## Project Structure
 The folder structure of this app is explained below:
@@ -45,3 +50,15 @@ The folder structure of this app is explained below:
 | **server/src/models**           | Models define schemas that will be used in storing and retrieving data from Application database  |
 | **server/src**/server.js         | Entry point to express app                                                               |
 | package.json             | Contains npm dependencies as well as [build scripts](#what-if-a-library-isnt-on-definitelytyped)
+
+---
+
+## Routes Structure 
+
+| Route | Description |
+| ------------------------ | ---------------------- |
+| ``api/v1/``      | Route Description |
+| ``api/v1/``      | Route Description                               |
+| ``api/v1/``      | Route Description 
+| ``api/v1/``      | Route Description 
+| ``api/v1/``      | Route Description  
