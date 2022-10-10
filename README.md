@@ -40,7 +40,7 @@ The folder structure of this app is explained below:
 | ------------------------ | --------------------------------------------------------------------------------------------- |
 | ``node_modules``         | Contains all  npm dependencies                                                            |
 | ``server/src``                  | Contains  source code that will be compiled to the dist dir                               |
-| ``config.env``        | Application configuration including environment-specific configs 
+| ``config/config.env``        | Application configuration including environment-specific configs 
 | ``server/src/controllers``      | Controllers define functions to serve various express routes. 
 | ``server/src/lib``              | Common libraries to be used across your app.  
 | ``server/src/middlewares``      | Express middlewares which process the incoming requests before handling them down to the routes
@@ -53,10 +53,25 @@ The folder structure of this app is explained below:
 
 ## Routes Structure 
 
-| Route | Description |
-| ------------------------ | ---------------------- |
-| ``api/v1/``      | Route Description |
-| ``api/v1/``      | Route Description                               |
-| ``api/v1/``      | Route Description 
-| ``api/v1/``      | Route Description 
-| ``api/v1/``      | Route Description  
+| Method | Route | Description |
+| :----:   | :---------------: | ---------------------- |
+| `GET`  | `api/v1/users`      | Route Description |
+| `GET`  | `api/v1/user/:id`      | Route Description |
+| `POST` | `api/v1/user/:id`      | Route Description                               |
+|  `PUT`      | `api/v1/user/:id`      | Route Description 
+| `DELETE`  | `api/v1/user/:id`      | Route Description 
+|   `GET`     | `api/v1/books`      | Route Description  
+|   `GET `     | `api/v1/book/:id`      | Route Description  
+|   `POST`     | `api/v1/book/:id`      | Route Description  
+|   `PUT`     | `api/v1/book/:id`      | Route Description  
+|   `DELETE`     | `api/v1/book/:id`      | Route Description  
+|   `GET`     | `api/v1/posts`      | Route Description  
+|   `GET `     | `api/v1/post/:id`      | Route Description  
+|   `POST`     | `api/v1/post/:id`      | Route Description  
+|   `PUT`     | `api/v1/post/:id`      | Route Description  
+|   `DELETE`     | `api/v1/post/:id`      | Route Description  
+|   `GET`     | `api/v1/groups`      | Route Description  
+|   `GET `     | `api/v1/group/:id`      | Route Description  
+|   `POST`     | `api/v1/group/:id`      | Route Description  
+|   `PUT`     | `api/v1/group/:id`      | Route Description  
+|   `DELETE`     | `api/v1/group/:id`      | Route Description  
