@@ -39,7 +39,7 @@ The folder structure of this app is explained below:
 | Name | Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
 | ``node_modules``         | Contains all  npm dependencies                                                            |
-| ``server/src``                  | Contains  source code that will be compiled to the dist dir                               |
+| ``server/src``                  | Contains  source code of the Project                              |
 | ``config/config.env``        | Application configuration including environment-specific configs 
 | ``server/src/controllers``      | Controllers define functions to serve various express routes. 
 | ``server/src/lib``              | Common libraries to be used across your app.  
