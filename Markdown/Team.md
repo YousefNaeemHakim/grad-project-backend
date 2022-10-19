@@ -6,6 +6,6 @@
 | **Omar Khaled** | Back-End Dev • Front-End Dev | Server-Side    
 | **Assmaa Akram** | Mobile Team Lead | Goodreads
 | **Ahmed Khalifa** | Mobile Dev • Software Tester | Amazon
-| **Mohamed Magdy** | Mobile Dev | Amazon
-| **Mohamed Samir** | Mobile Dev • Software Tester | Community
+| **Mohamed Magdy** | Mobile Dev | Community
 | **Sara Gamal** | Mobile Dev | Community                                                  
+| **Mohamed Samir** | Software Tester | Whole App
