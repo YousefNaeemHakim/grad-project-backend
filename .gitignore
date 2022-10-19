@@ -19,9 +19,5 @@ npm-debug.log
 .nyc
 .DS_Store
 
-Markdown/Team.md
 Markdown/MobileApps.md
 Markdown/CoverMyBack.md
-
-server/src/models/
-server/src/controllers/

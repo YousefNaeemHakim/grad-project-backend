@@ -4,9 +4,10 @@
   - [Tools](#tools)
   - [Testing](#testing)
   - [Mobile App](#mobile-app)
-- [Architecture](#architecture)
-  - [Project Structure](#project-structure)
-  - [Routes Structure](#routes-structure)
+- [<u>Architecture](#uarchitecture)
+  - [<u>Project Structure](#uproject-structure)
+  - [<u>Routes Structure](#uroutes-structure)
+  - [<u>Quick Links](#uquick-links)
 
 
 # Project Technologies 
@@ -31,9 +32,9 @@
 
 ---
 
-# Architecture 
+# <u>Architecture 
 
-## Project Structure
+## <u>Project Structure
 The folder structure of this app is explained below:
 
 | Name | Description |
@@ -51,7 +52,7 @@ The folder structure of this app is explained below:
 
 ---
 
-## Routes Structure 
+## <u>Routes Structure 
 
 | Method | Route | Description |
 | :----:   | :---------------: | ---------------------- |
@@ -75,3 +76,11 @@ The folder structure of this app is explained below:
 |   `POST`     | `api/v1/group/:id`      | Route Description  
 |   `PUT`     | `api/v1/group/:id`      | Route Description  
 |   `DELETE`     | `api/v1/group/:id`      | Route Description  
+
+
+---
+
+## <u>Quick Links 
+- [Project Mindmap](https://transno.com/doc/2_fG9SfCa2U)
+- [Engineering Wiki](https://eng-wiki.simple.ink/)
+- [Live Landing Page](https://gradwiki.simple.ink/)
