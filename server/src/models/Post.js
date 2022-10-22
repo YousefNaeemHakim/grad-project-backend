@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const ThoughtSchema = new mongoose.Schema(
+const PostSchema = new mongoose.Schema(
   {
     userId: {
       type: String,
@@ -21,4 +21,4 @@ const ThoughtSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Thought", ThoughtSchema);
+module.exports = mongoose.model("Post", PostSchema);
