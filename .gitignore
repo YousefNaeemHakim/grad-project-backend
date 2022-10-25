@@ -25,15 +25,6 @@ media
 .idea/**/gradle.xml
 .idea/**/libraries
 
-# File-based project format
-*.iws
-
-# IntelliJ
-out/
-
-# JIRA plugin
-atlassian-ide-plugin.xml
-
 # Python # 
 *.py[cod] 
 *$py.class 
