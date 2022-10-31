@@ -13,10 +13,13 @@ def getRoutes(request):
         'GET /api',
         'GET /api/rooms',
         'GET /api/rooms/:id',
+        'POST /api/room/add',
         'GET /api/topics',
         'GET /api/topics/:id',
+        'POST /api/topic/add',
         'GET /api/messages',
         'GET /api/messages/:id',
+        'POST /api/message/add',
         'GET /api/users',
         'GET /api/users/:id'
     ]
@@ -29,11 +32,17 @@ def getRooms(request):
     serializer = RoomSerializer(rooms, many=True)
     return Response(serializer.data)
 
-
 @api_view(['GET'])
 def getRoom(request, pk):
     room = Room.objects.get(id=pk)
     serializer = RoomSerializer(room, many=False)
+    return Response(serializer.data)
+
+@api_view(['POST'])
+def addRoom(request):
+    serializer = RoomSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
     return Response(serializer.data)
 
 
@@ -44,11 +53,17 @@ def getTopics(request):
     serializer = TopicSerializer(topics, many=True)
     return Response(serializer.data)
 
-
 @api_view(['GET'])
 def getTopic(request, pk):
     topic = Topic.objects.get(id=pk)
     serializer = TopicSerializer(topic, many=False)
+    return Response(serializer.data)
+
+@api_view(['POST'])
+def addTopic(request):
+    serializer = TopicSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
     return Response(serializer.data)
 
 
@@ -65,6 +80,12 @@ def getMessage(request , pk):
     serializer = MessageSerializer(message, many=True)
     return Response(serializer.data)
 
+@api_view(['POST'])
+def addMessage(request):
+    serializer = MessageSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+    return Response(serializer.data)
 
 
 @api_view(['GET'])
