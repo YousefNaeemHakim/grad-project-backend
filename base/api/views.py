@@ -45,6 +45,14 @@ def addRoom(request):
         serializer.save()
     return Response(serializer.data)
 
+@api_view(['PUT'])
+def editRoom(request , pk):
+    room = Room.objects.get(id=pk)
+    serializer = RoomSerializer(room , data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+    return Response(serializer.data)
+
 
 
 @api_view(['GET'])
