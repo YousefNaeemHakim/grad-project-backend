@@ -15,7 +15,8 @@
 
 - **[Learn Git & GitHub](https://www.youtube.com/playlist?list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF)**
 - **[Linux for Programmers](https://www.youtube.com/playlist?list=PLzMcBGfZo4-nUIIMsz040W_X-03QH5c5h)**
-- **[Branching on Git](https://www.youtube.com/watch?v=e2IbNHi4uCI)**
+- **[Branching on Git 1](https://www.youtube.com/watch?v=e2IbNHi4uCI)**
+- **[Branching on Git 2](https://www.youtube.com/watch?v=FyAAIHHClqI)**
 
 ## Django & DRF Projects
 
