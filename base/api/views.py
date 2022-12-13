@@ -61,7 +61,7 @@ def GroupsDealWithPK(request, pk):
 
 
 ## Same Logic using Mixins
-class GETorPOSTGroups(mixins.ListModelMixin , mixins.CreateModelMixin , generics.GenericAPIView):
+class GETOrPOSTGroups(mixins.ListModelMixin , mixins.CreateModelMixin , generics.GenericAPIView):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
 
@@ -70,7 +70,7 @@ class GETorPOSTGroups(mixins.ListModelMixin , mixins.CreateModelMixin , generics
     def post(self , request):
         return self.create(request)
 
-class GETorPUTorDELETEGroupbyPK(mixins.RetrieveModelMixin , mixins.UpdateModelMixin , mixins.DestroyModelMixin , generics.GenericAPIView):
+class GETOrPUTOrDELETEGroupbyPK(mixins.RetrieveModelMixin , mixins.UpdateModelMixin , mixins.DestroyModelMixin , generics.GenericAPIView):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
 
@@ -83,7 +83,7 @@ class GETorPUTorDELETEGroupbyPK(mixins.RetrieveModelMixin , mixins.UpdateModelMi
 
 
 @api_view(['GET' , 'POST'])
-def GetorAddTopics(request):
+def GetOrAddTopics(request):
     if request.method == 'GET':
         topics = Topic.objects.all()
         serializer = TopicSerializer(topics, many=True)
@@ -121,7 +121,7 @@ def TopicsDealWithPK(request, pk):
 
 
 ## Same Logic using Mixins
-class GETorPOSTTopics(mixins.ListModelMixin , mixins.CreateModelMixin , generics.GenericAPIView):
+class GETOrPOSTTopics(mixins.ListModelMixin , mixins.CreateModelMixin , generics.GenericAPIView):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
 
@@ -131,7 +131,7 @@ class GETorPOSTTopics(mixins.ListModelMixin , mixins.CreateModelMixin , generics
         return self.create(request)
 
 
-class GETorPUTorDELETETopicbyPK(mixins.RetrieveModelMixin , mixins.UpdateModelMixin , mixins.DestroyModelMixin , generics.GenericAPIView):
+class GETOrPUTOrDELETETopicbyPK(mixins.RetrieveModelMixin , mixins.UpdateModelMixin , mixins.DestroyModelMixin , generics.GenericAPIView):
     queryset = Topic.objects.all()
     serializer_class = TopicSerializer
 
@@ -144,7 +144,7 @@ class GETorPUTorDELETETopicbyPK(mixins.RetrieveModelMixin , mixins.UpdateModelMi
 
 
 @api_view(['GET' , 'POST'])
-def GetorAddPosts(request):
+def GetOrAddPosts(request):
     if request.method == 'GET':
         topics = Topic.objects.all()
         serializer = TopicSerializer(topics, many=True)
@@ -182,7 +182,7 @@ def PostsDealWithPK(request, pk):
 
 
 ## Same Logic using Mixins
-class GETorPOSTPosts(mixins.ListModelMixin , mixins.CreateModelMixin , generics.GenericAPIView):
+class GETOrPOSTPosts(mixins.ListModelMixin , mixins.CreateModelMixin , generics.GenericAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
 
@@ -192,7 +192,7 @@ class GETorPOSTPosts(mixins.ListModelMixin , mixins.CreateModelMixin , generics.
         return self.create(request)
 
 
-class GETorPUTorDELETEPostbyPK(mixins.RetrieveModelMixin , mixins.UpdateModelMixin , mixins.DestroyModelMixin , generics.GenericAPIView):
+class GETOrPUTOrDELETEPostbyPK(mixins.RetrieveModelMixin , mixins.UpdateModelMixin , mixins.DestroyModelMixin , generics.GenericAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
 
