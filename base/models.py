@@ -12,7 +12,7 @@ class Topic(models.Model):
         return self.name
 
 
-class Room(models.Model):
+class Group(models.Model):
     host = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     topic = models.ForeignKey(Topic, on_delete=models.SET_NULL, null=True)
     name = models.CharField(max_length=200)
@@ -29,9 +29,9 @@ class Room(models.Model):
         return self.name
 
 
-class Message(models.Model):
+class Post(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE , default='')
-    room = models.ForeignKey(Room, on_delete=models.CASCADE)
+    group = models.ForeignKey(Group, on_delete=models.CASCADE)
     body = models.TextField()
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)

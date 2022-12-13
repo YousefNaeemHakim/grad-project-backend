@@ -1,19 +1,19 @@
 from rest_framework.serializers import ModelSerializer
-from base.models import Room , Topic , Message , User
+from base.models import Group , Topic , Post , User
 
 
-class RoomSerializer(ModelSerializer):
+class GroupSerializer(ModelSerializer):
     class Meta:
-        model = Room
+        model = Group
         fields = '__all__'
 
 class TopicSerializer(ModelSerializer):
     class Meta:
         model = Topic
         fields = '__all__'
-class MessageSerializer(ModelSerializer):
+class PostSerializer(ModelSerializer):
     class Meta:
-        model = Message
+        model = Post
         fields = '__all__'
 
 class UserSerializer(ModelSerializer):
