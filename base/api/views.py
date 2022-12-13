@@ -35,28 +35,6 @@ def GetOrAddGroups(request):
         return Response(serializer.data, status= status.HTTP_400_BAD_REQUEST)
 
 
-class GETOrPOSTGroups(mixins.ListModelMixin , mixins.CreateModelMixin , generics.GenericAPIView):
-    queryset = Group.objects.all()
-    serializer_class = GroupSerializer
-
-    def get(self , request):
-        return self.list(request)
-    def post(self , request):
-        return self.create(request)
-
-
-class GETandPUTandDELETEbyPK(mixins.RetrieveModelMixin , mixins.UpdateModelMixin , mixins.DestroyModelMixin , generics.GenericAPIView):
-    queryset = Group.objects.all()
-    serializer_class = GroupSerializer
-
-    def get(self , request , pk):
-        return self.retrieve(request)
-    def put(self , request , pk):
-        return self.update(request)
-    def delete(self , request , pk):
-        return self.destroy(request)
-
-
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def GroupsDealWithPK(request, pk):
@@ -80,6 +58,28 @@ def GroupsDealWithPK(request, pk):
     if request.method == 'DELETE':
         room.delete()
         return Response(status= status.HTTP_204_NO_CONTENT)
+
+
+## Same Logic using Mixins
+class GETorPOSTGroups(mixins.ListModelMixin , mixins.CreateModelMixin , generics.GenericAPIView):
+    queryset = Group.objects.all()
+    serializer_class = GroupSerializer
+
+    def get(self , request):
+        return self.list(request)
+    def post(self , request):
+        return self.create(request)
+
+class GETorPUTorDELETEGroupbyPK(mixins.RetrieveModelMixin , mixins.UpdateModelMixin , mixins.DestroyModelMixin , generics.GenericAPIView):
+    queryset = Group.objects.all()
+    serializer_class = GroupSerializer
+
+    def get(self , request , pk):
+        return self.retrieve(request)
+    def put(self , request , pk):
+        return self.update(request)
+    def delete(self , request , pk):
+        return self.destroy(request)
 
 
 @api_view(['GET' , 'POST'])
@@ -120,6 +120,28 @@ def TopicsDealWithPK(request, pk):
         return Response(status= status.HTTP_204_NO_CONTENT)
 
 
+## Same Logic using Mixins
+class GETorPOSTTopics(mixins.ListModelMixin , mixins.CreateModelMixin , generics.GenericAPIView):
+    queryset = Group.objects.all()
+    serializer_class = GroupSerializer
+
+    def get(self , request):
+        return self.list(request)
+    def post(self , request):
+        return self.create(request)
+
+
+class GETorPUTorDELETETopicbyPK(mixins.RetrieveModelMixin , mixins.UpdateModelMixin , mixins.DestroyModelMixin , generics.GenericAPIView):
+    queryset = Topic.objects.all()
+    serializer_class = TopicSerializer
+
+    def get(self , request , pk):
+        return self.retrieve(request)
+    def put(self , request , pk):
+        return self.update(request)
+    def delete(self , request , pk):
+        return self.destroy(request)
+
 
 @api_view(['GET' , 'POST'])
 def GetorAddPosts(request):
@@ -157,3 +179,26 @@ def PostsDealWithPK(request, pk):
     if request.method == 'DELETE':
         post.delete()
         return Response(status= status.HTTP_204_NO_CONTENT)
+
+
+## Same Logic using Mixins
+class GETorPOSTPosts(mixins.ListModelMixin , mixins.CreateModelMixin , generics.GenericAPIView):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
+
+    def get(self , request):
+        return self.list(request)
+    def post(self , request):
+        return self.create(request)
+
+
+class GETorPUTorDELETEPostbyPK(mixins.RetrieveModelMixin , mixins.UpdateModelMixin , mixins.DestroyModelMixin , generics.GenericAPIView):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
+
+    def get(self , request , pk):
+        return self.retrieve(request)
+    def put(self , request , pk):
+        return self.update(request)
+    def delete(self , request , pk):
+        return self.destroy(request)
