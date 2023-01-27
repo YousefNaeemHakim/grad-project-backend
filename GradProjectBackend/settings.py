@@ -38,11 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_rest_passwordreset',
     'knox',
     'corsheaders',
     'base.apps.BaseConfig',
     'store.apps.StoreConfig',
     'accounts.apps.AccountsConfig',
+    'payment.apps.PaymentConfig',
 ]
 
 
@@ -139,3 +141,5 @@ REST_FRAMEWORK = {
         'knox.auth.TokenAuthentication',
     ]
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
