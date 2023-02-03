@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
     'store.apps.StoreConfig',
     'accounts.apps.AccountsConfig',
-    'payment.apps.PaymentConfig',
 ]
 
 
