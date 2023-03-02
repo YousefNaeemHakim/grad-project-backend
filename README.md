@@ -1,54 +1,64 @@
 ## Table of Content
 - [Project Technologies](#project-technologies)
-  - [Tech Stack ( PERN || MERN )](#tech-stack--pern--mern-)
-  - [Tools](#tools)
-  - [Testing](#testing)
   - [Mobile App](#mobile-app)
-- [<u>Architecture](#uarchitecture)
-  - [<u>Project Structure](#uproject-structure)
-  - [<u>Routes Structure](#uroutes-structure)
-  - [<u>Quick Links](#uquick-links)
+  - [Client-Side](#client-side)
+  - [Server-Side](#server-side)
+  - [Development Tools](#development-tools)
+- [Architecture](#architecture)
+  - [Django Project Structure](#django-project-structure)
+  - [Routes Structure](#routes-structure)
+  - [Team Structure](#team-structure)
 
 
 # Project Technologies 
-## Tech Stack ( PERN || MERN )
-<a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/></a>
-<a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/></a>
-<a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a>
-<a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
-<a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a>
-
-## Tools
-<a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a>
-<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
-
-## Testing
-<a href="https://jestjs.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" width="40" height="40"/> </a>
 
 ## Mobile App
-<a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a>
-<a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=dart,flutter" />
+  </a>
+</p>
+
+## Client-Side
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,javascript,bootstrap,jquery" />
+  </a>
+</p>
+
+## Server-Side
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,django,postgres,sqlite,nginx" />
+  </a>
+</p>
+
+## Development Tools
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=postman,vscode,androidstudio,git,github" />
+  </a>
+</p>
+
 
 ---
 
 # <u>Architecture 
 
-## <u>Project Structure
+## <u>Django Project Structure
 The folder structure of this app is explained below:
 
 | Name | Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
-| ``node_modules``         | Contains all  npm dependencies                                                            |
-| ``server/src``                  | Contains  source code of the Project                              |
-| ``config/config.env``        | Application configuration including environment-specific configs 
-| ``server/src/controllers``      | Controllers define functions to serve various express routes. 
-| ``server/src/lib``              | Common libraries to be used across your app.  
-| ``server/src/middlewares``      | Express middlewares which process the incoming requests before handling them down to the routes
-| ``server/src/routes``           | Contain all express routes, separated by module/area of application                       
-| ``server/src/models``           | Models define schemas that will be used in storing and retrieving data from Application database  |
-| ``server/src/server.js``         | Entry point to express app                                                               |
-| ``package.json``             | Contains npm dependencies as well as [build scripts](#what-if-a-library-isnt-on-definitelytyped)
+| ``settings.py``         | contains the Django project configuration.                                                            |
+| ``urls.py``                  | it contains all the endpoints that we should have for our app                            |
+| ``admin.py``      | for registering the Django models into the Django administration. 
+| ``apps.py``              | is a file that is used to help the user include the application configuration for their app.  
+| ``models.py``      | represents the models of web applications in the form of classes                     
+| ``views.py``           | It contains all the views in the form of classes.  |
+| ``manage.py``         | This file is used as a command-line utility                                                  |
+| ``wsgi.py``        | Web Server Gateway Interface 
+| ``requirements.txt``             | Contains all installed python libraries
 
 ---
 
@@ -77,10 +87,16 @@ The folder structure of this app is explained below:
 |   `PUT`     | `api/v1/group/:id`      | Route Description  
 |   `DELETE`     | `api/v1/group/:id`      | Route Description  
 
-
 ---
 
-## <u>Quick Links 
-- [Project Mindmap](https://transno.com/doc/2_fG9SfCa2U)
-- [Engineering Wiki](https://eng-wiki.simple.ink/)
-- [Live Landing Page](https://gradwiki.simple.ink/)
+## Team Structure
+
+| Name | Role
+| :----: | :-----------------------------------------------:
+| **Yousef Naeem** | Team Lead • Back-End Developer   | Server-Side                                                     
+| **Omar Khaled** | Back-End Developer   
+| **Assmaa Akram** | Mobile Team Lead
+| **Ahmed Khalifa** | Mobile Developer
+| **Mohamed Magdy** | Mobile Developer
+| **Sara Gamal** | Mobile Developer                                           
+| **Mohamed Samir** | Mobile Developer • SW Tester
