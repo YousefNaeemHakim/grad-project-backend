@@ -6,7 +6,6 @@
   - [Development Tools](#development-tools)
 - [Architecture](#architecture)
   - [Django Project Structure](#django-project-structure)
-  - [Routes Structure](#routes-structure)
   - [Team Structure](#team-structure)
 
 
@@ -59,33 +58,6 @@ The folder structure of this app is explained below:
 | ``manage.py``         | This file is used as a command-line utility                                                  |
 | ``wsgi.py``        | Web Server Gateway Interface 
 | ``requirements.txt``             | Contains all installed python libraries
-
----
-
-## <u>Routes Structure 
-
-| Method | Route | Description |
-| :----:   | :---------------: | ---------------------- |
-| `GET`  | `api/v1/users`      | Route Description |
-| `GET`  | `api/v1/user/:id`      | Route Description |
-| `POST` | `api/v1/user/:id`      | Route Description                               |
-|  `PUT`      | `api/v1/user/:id`      | Route Description 
-| `DELETE`  | `api/v1/user/:id`      | Route Description 
-|   `GET`     | `api/v1/books`      | Route Description  
-|   `GET `     | `api/v1/book/:id`      | Route Description  
-|   `POST`     | `api/v1/book/:id`      | Route Description  
-|   `PUT`     | `api/v1/book/:id`      | Route Description  
-|   `DELETE`     | `api/v1/book/:id`      | Route Description  
-|   `GET`     | `api/v1/posts`      | Route Description  
-|   `GET `     | `api/v1/post/:id`      | Route Description  
-|   `POST`     | `api/v1/post/:id`      | Route Description  
-|   `PUT`     | `api/v1/post/:id`      | Route Description  
-|   `DELETE`     | `api/v1/post/:id`      | Route Description  
-|   `GET`     | `api/v1/groups`      | Route Description  
-|   `GET `     | `api/v1/group/:id`      | Route Description  
-|   `POST`     | `api/v1/group/:id`      | Route Description  
-|   `PUT`     | `api/v1/group/:id`      | Route Description  
-|   `DELETE`     | `api/v1/group/:id`      | Route Description  
 
 ---
 
