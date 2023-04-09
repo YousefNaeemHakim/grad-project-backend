@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'knox',
     'corsheaders',
     'community.apps.CommunityConfig',
-    'auth.apps.AuthConfig',
+    'base.apps.BaseConfig',
+    'devroad.apps.DevroadConfig',
+    'accounts.apps.AccountsConfig',
 ]
 
 
