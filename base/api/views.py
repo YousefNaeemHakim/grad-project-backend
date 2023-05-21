@@ -5,7 +5,7 @@ from rest_framework.permissions import IsAdminUser
 
 # mixins
 class mixins_list(mixins.ListModelMixin, mixins.CreatModelMixin, generics.GenericAPIView) : 
-    queryset = User.objects.all() # هل احنا بنختار اليوزر كل مره ولا واشمعنا
+    queryset = User.objects.all() 
     serializer_class = UserSerializer
 
 # get/post
