@@ -5,7 +5,7 @@ urlpatterns = [
 
 # Summary : 
 # get post
-path('summary_mixins/', views.mixins_list.as_view()),  # ليه ال as view مش ظاهره
+path('summary_mixins/', views.mixins_list.as_view()),
 # get update delete
 path('summary_mixins/<int:pk>', views.mixins_pk.as_view()),
 
