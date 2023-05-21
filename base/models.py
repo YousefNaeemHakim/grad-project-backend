@@ -4,16 +4,21 @@ from community.models import Profile
 import uuid
 
 class Summary(models.Model):
-     Rate = models.DecimalField(decimal_places=2, max_digits=3)
-     def calculate_average_rating():
-      average_rating = Summary.objects.aggregate(Avg('rating'))['rating__avg']
-      return average_rating
+      created_at= models.DateTimeField(auto_now_add=True)
+      updated_at = models.DateTimeField(auto_now=True)
+      title = models.CharField(max_length=100)
+      content = models.TextField()
+      author = models.ForeignKey(Profile, on_delete=models.CASCADE)
+      user = models.ForeignKey(Profile, on_delete=models.CASCADE)
+      rate = models.FloatField(max_length=3)
 
-     created_at= models.DateTimeField(auto_now_add=True)
-     updated_at = models.DateTimeField(auto_now=True)
-     title = models.CharField(max_length=100)
-     content = models.TextField()
-     author = models.ForeignKey(Profile, on_delete=models.CASCADE)
+      @classmethod
+      def calculate_average_rating(cls):
+        average_rating = cls.objects.all().aggregate(models.Avg('rate'))['rate__avg']
+        return average_rating
+      
+      def __str__(self):
+        return self.title
     
 
 
@@ -24,6 +29,9 @@ class Review(models.Model):
      user = models.ForeignKey(Profile, on_delete=models.CASCADE)
      created_at = models.DateTimeField(auto_now_add=True)
      updated_at = models.DateTimeField(auto_now=True)
+
+     def __str__(self):
+        return self.title
 
 
 class Category(models.Model):
@@ -48,6 +56,10 @@ class Category(models.Model):
     title = models.CharField(max_length=20, choices=CategoryTypes.choices)
     description = models.TextField(blank=True, null=True) 
 
+    def __str__(self):
+        return self.title
+    
+
 class Subscription(models.Model):
     user = models.ForeignKey(Profile, on_delete=models.CASCADE)
     start_date = models.DateField()
@@ -55,3 +67,6 @@ class Subscription(models.Model):
     active = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    
+    def __str__(self):
+        return {self.user.username}
