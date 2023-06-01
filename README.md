@@ -7,7 +7,7 @@
 - [Architecture](#architecture)
   - [Django Project Structure](#django-project-structure)
   - [ Django REST Framework API folder structure in the project](#-django-rest-framework-api-folder-structure-in-the-project)
-  - [|urls.py | URL configuration file specific to the app. Maps URLs to corresponding views within the app](#urlspy--url-configuration-file-specific-to-the-app-maps-urls-to-corresponding-views-within-the-app)
+  - [|``urls.py`` | URL configuration file specific to the app. Maps URLs to corresponding views within the app](#urlspy--url-configuration-file-specific-to-the-app-maps-urls-to-corresponding-views-within-the-app)
   - [Team Structure](#team-structure)
 
 
@@ -61,11 +61,11 @@
 
 ## <u> Django REST Framework API folder structure in the project
 
-| Folder/File Name | Description |
+| File Name | Description |
 | --- | --- |
-|serializers.py | Contains serializers to convert models into JSON representations and vice versa. |
-|views.py | Defines API views (e.g., class-based views or function-based views) for handling HTTP requests and generating responses. |
-|urls.py | URL configuration file specific to the app. Maps URLs to corresponding views within the app
+|``serializers.py`` | Contains serializers to convert models into JSON representations and vice versa. |
+|``views.py`` | Defines API views (e.g., class-based views or function-based views) for handling HTTP requests and generating responses. |
+|``urls.py`` | URL configuration file specific to the app. Maps URLs to corresponding views within the app
 ---
 
 | Name | Description |
