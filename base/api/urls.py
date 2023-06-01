@@ -1,6 +1,5 @@
 from django.urls import path
-from base.api.views import (SummaryList, SummaryDetail, SummarySearch, SummaryReviewView,
-                    CategoryListCreateView, CategoryRetrieveUpdateDestroyView)
+from base.api.views import (SummaryList, SummaryDetail, SummarySearch, SummaryReviewView, CategoryListCreateView, CategoryRetrieveUpdateDestroyView)
 
 
 urlpatterns = [
