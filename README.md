@@ -6,6 +6,8 @@
   - [Development Tools](#development-tools)
 - [Architecture](#architecture)
   - [Django Project Structure](#django-project-structure)
+  - [ Django REST Framework API folder structure in the project](#-django-rest-framework-api-folder-structure-in-the-project)
+  - [|urls.py | URL configuration file specific to the app. Maps URLs to corresponding views within the app](#urlspy--url-configuration-file-specific-to-the-app-maps-urls-to-corresponding-views-within-the-app)
   - [Team Structure](#team-structure)
 
 
@@ -45,10 +47,29 @@
 # <u>Architecture 
 
 ## <u>Django Project Structure
-The folder structure of this app is explained below:
+
+
+| App | Description |
+| ----- | --- |
+| ``accounts`` | Handles user authentication and registration functionality. Manages user profiles, login, logout, password reset, and account settings. |
+| ``community`` | Provides features for community interactions, such as creating and joining groups, posting and commenting on discussions, and user-to-user messaging. |
+| ``devroad`` | Offers roadmaps for computer science and software engineering roles. Contains curated learning paths, resources, and milestones to guide users in their career development. |
+| ``base`` | Focuses on a books summaries app. Includes views that allows to create, view, and manage summaries of books. Provides search and filtering functionality for easy navigation and discovery of summaries. |
+| ``iread`` | The default app in the Django project |
+
+---
+
+## <u> Django REST Framework API folder structure in the project
+
+| Folder/File Name | Description |
+| --- | --- |
+|serializers.py | Contains serializers to convert models into JSON representations and vice versa. |
+|views.py | Defines API views (e.g., class-based views or function-based views) for handling HTTP requests and generating responses. |
+|urls.py | URL configuration file specific to the app. Maps URLs to corresponding views within the app
+---
 
 | Name | Description |
-| ------------------------ | --------------------------------------------------------------------------------------------- |
+| ------- | ------------ |
 | ``settings.py``         | contains the Django project configuration.                                                            |
 | ``urls.py``                  | it contains all the endpoints that we should have for our app                            |
 | ``admin.py``      | for registering the Django models into the Django administration. 
@@ -71,4 +92,4 @@ The folder structure of this app is explained below:
 | **Ahmed Khalifa** | Mobile Developer
 | **Mohamed Magdy** | Mobile Developer
 | **Sara Gamal** | Mobile Developer                                           
-| **Mohamed Samir** | Mobile Developer • SW Tester
+| **Mohamed Samir** | SW Tester
