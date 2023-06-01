@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 import uuid
+from django_countries.fields import CountryField
 
 
 class Profile(models.Model):
@@ -9,7 +10,7 @@ class Profile(models.Model):
     bio = models.TextField(blank=True)
     avatar = models.ImageField(upload_to='avatars/', blank=True, null=True)
     phone = models.CharField(max_length=15, blank=True, null=True)
-    country = models.CharField(max_length=50, blank=True, null=True)
+    country = CountryField(blank=True, null=True, default=None, blank_label=" Select Country ")
     language = models.CharField(max_length=50, blank=True, null=True)
     birthdate = models.DateField(blank=True, null=True)
     facebookLink = models.URLField(blank=True, null=True)
