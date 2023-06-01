@@ -75,3 +75,13 @@ class RoadmapStepList(generics.ListCreateAPIView):
 
         headers = self.get_success_headers(serializer.data)
         return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+
+
+class RoadmapStepSearch(generics.ListAPIView):
+    serializer_class = RoadmapStepSerializer
+
+    def get_queryset(self):
+        queryset = RoadmapStep.objects.all()
+        search_query = self.request.query_params.get('q', None)
+        if search_query:
+            queryset = queryset.filter(Q(title__icontains=search_query) | Q(roadmap__icontains=search_query))
