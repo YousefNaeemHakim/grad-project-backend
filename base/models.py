@@ -9,8 +9,9 @@ class Summary(models.Model):
       updated_at = models.DateTimeField(auto_now=True)
       title = models.CharField(max_length=100)
       content = models.TextField()
+      # author = models.ForeignKey(Profile, on_delete=models.CASCADE)
       author = models.CharField(max_length=50)
-      user = models.ForeignKey(Profile, on_delete=models.CASCADE)
+      # user = models.ForeignKey(Profile, on_delete=models.CASCADE)
       rate = models.FloatField(max_length=3)
 
       @classmethod
