@@ -30,7 +30,7 @@
 ## Server-Side
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,django,postgres,sqlite,nginx" />
+    <img src="https://skillicons.dev/icons?i=firebase,firestore,python,django,postgres,sqlite" />
   </a>
 </p>
 
